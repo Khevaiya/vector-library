@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+  <TOC>
+    <Node>
+      <Name>Root</Name>
+      <Path>index.html</Path>
+      <Subnodes>
+       <Node>
+        <Name>vector</Name>
+        <Path>kvector_8hpp.html</Path>
+       </Node>
+       <Node>
+        <Name>List</Name>
+        <Path>List_8hpp.html</Path>
+       </Node>
+       <Node>
+        <Name>Examples</Name>
+        <Path>examples.html</Path>
+      <Subnodes>
+         <Node>
+          <Name>testvector.cpp</Name>
+          <Path>testvector_8cpp-example.html</Path>
+         </Node>
+        </Subnodes>
+       </Node>
+      </Subnodes>
+    </Node>
+  </TOC>
+</DocSetNodes>
