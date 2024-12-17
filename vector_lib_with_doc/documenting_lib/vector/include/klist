@@ -1,0 +1,26 @@
+#ifndef klist__
+#define klist__ 1234
+
+#include<iostream>
+using namespace std;
+/*
+#define bool int
+#define true 1
+#define True 1
+#define TRUE 1
+#define false 0
+#define False 0
+#define FALSE 0 iostream me already define he */
+class  klist
+{
+public:
+virtual void add(int data,bool*success)=0;
+virtual int getSize()const=0;
+virtual int get(int index,bool *success)const=0;
+virtual void insertAt(int index,int data,bool *success)=0;
+virtual void update(int index,int data,bool *success)=0;
+virtual int removeAt(int index,bool *success)=0;
+virtual void removeAll()=0;
+virtual void clear()=0;
+};
+#endif

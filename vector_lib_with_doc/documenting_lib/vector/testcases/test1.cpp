@@ -54,10 +54,9 @@ cout<<"size of kvector: "<<k.getSize()<<endl;
 cout<<" operator + and ="<<endl;
 kvector i,j;
 i=j+k;
-for(int e=0;e<k.getSize();e++)
+for(int e=0;e<=10;e++)
 {
 cout<<i.get(e,&success)<<endl;
-
 }
 cout<<"size of kvector: "<<k.getSize()<<endl;
 //-------------------------------operator+=--------------------

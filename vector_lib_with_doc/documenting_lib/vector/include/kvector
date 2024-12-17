@@ -1,0 +1,32 @@
+#ifndef karray__
+#define karray__ 1234
+#include<klist>
+class kvector:public klist
+{
+private:
+int **ptr;
+int capacity;
+int size;
+char allocationFlag;
+bool addRow();
+public:
+kvector();
+kvector(int bufferSize);
+kvector(const kvector& other);
+virtual ~kvector();
+//---------------------------------------
+kvector& operator=(const kvector& other);
+void operator+=(const kvector& other);
+kvector operator+(const kvector& other);
+int & operator[](int index);
+//---------------------------------------
+void add(int data,bool*success);
+int getSize()const;
+int  get(int index,bool *success)const;
+void insertAt(int index,int data,bool *success);
+int removeAt(int index ,bool *success);
+void update(int index,int data,bool *success);
+void removeAll();
+void clear();
+};
+#endif

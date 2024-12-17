@@ -1,6 +1,9 @@
-
-#include<klist>
-#include<kvector> 
+/**
+ *@file kvector.cpp
+ *source code file of kvector header file
+ */
+#include<List.hpp>
+#include<kvector.hpp> 
 kvector::kvector()
 {
 this->ptr=new int *[10];
@@ -70,15 +73,13 @@ this->add(other.get(e,&succ),&succ);
 }
 }
 //----------------------------------------------------------------
-
-//----------------------------------------------------------------
 kvector::~kvector()
 {
 if(allocationFlag==0)
 {
 int rows=this->capacity/10;
 int j;
-for(j=0;j<rows;j++)
+for(j=0;j<=rows;j++)
 {
 delete[]this->ptr[j];
 }
@@ -86,7 +87,7 @@ delete []this->ptr;
 }
 }
 
-//---------------------------------------
+//-----------------------------------------------------------------
 
 kvector& kvector::operator=(const kvector& other)
 {
@@ -114,7 +115,6 @@ this->size=other.size;
 }
 return *this;
 }
-
 
 
 //----------------------------------------------------------------------
